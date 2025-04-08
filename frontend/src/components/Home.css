@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.home {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home .header {
+  display: flex;
+  align-items: center;
+}
+
+
+.home .header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home .header h1 {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) { 
+  .home .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home .header h1 {
+    margin-left: 0;
+    margin-top: 5px; 
+  }
+}
+
+.btn{
+  box-shadow: 0 0 0 1 10px black;
+}
+.sidebar {
+  width: 250px;
+  background: rgb(15, 26, 221);
+  background: linear-gradient(15deg, #141ee7 0%, rgba(53,114,239,1) 30%, rgba(58,190,249,1) 60%, rgb(105, 213, 255) 100%);
+  color: rgb(241, 241, 241);
+  align-items: center;
+  padding: 1rem;
+  padding-top: 30px;
+  transition: width 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 30px 0px;
+}
+.sidebar.expanded{
+  min-width: 250px;
+}
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1050;
+  background: rgb(15, 26, 221);
+  background: linear-gradient(15deg, rgb(20, 30, 231) 0%, rgba(53,114,239,1) 30%, rgba(58,190,249,1) 60%, rgb(105, 213, 255) 100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+  display: none;
+}
+
+.sidebar-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+.sidebar .vnr-logo{
+  width: 50px;
+  padding-right: 10px;
+}
+.sidebar .sidebar-icon {
+	font-size: 40px;
+	padding-right: 10px;
+}
+.vnr-logo {
+  width: 50px;
+}
+
+.side-items li:hover {
+  color: #ffffff;
+  border-bottom: 2px solid white;
+}
+
+
+.side-items {
+  margin-top: 20px;
+}
+.sidebar .side-items {
+	padding-top: 30px;
+	font-size: 1.3em;
+}
+
+.toggle-btn {
+	font-size: 1.5rem;
+}
+.side-items li {
+  padding-bottom: 3px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  transition: margin 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-icon {
+  margin: 0;
+}
+.tooltip-text {
+  display: none;
+  position: absolute;
+  left: 100%;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px;
+  z-index: 99999999;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.sidebar.collapsed .side-items li:hover .tooltip-text {
+  display: block;
+}
+.details-modal .modal-dialog {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  margin: 0;
+  max-width: 300px;
+  min-width: 100px;
+  color: #000;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.slider-container{
+  height: 100%;
+}
+.outlet-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.training-summary {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.training-summary p {
+  margin: 5px 0;
+}

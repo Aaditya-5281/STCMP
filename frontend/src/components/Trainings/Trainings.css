@@ -1,0 +1,28 @@
+.trainings-tab .toggle{
+    background-color: #d2d2d2;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease;
+}
+.trainings-tab .toggle::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 20px;
+    height: 16px;
+    border-radius: 50px;
+    margin: 5px;
+    transition: 0.2s ease;
+}
+.trainings-tab input:checked + .toggle{
+    background-color: #3c00ff;
+}
+.trainings-tab input:checked + .toggle::before{
+    transform: translateX(20px);
+}
+.trainings-tab input{
+    display: none;
+}

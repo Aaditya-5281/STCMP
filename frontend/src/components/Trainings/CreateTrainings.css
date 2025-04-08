@@ -1,0 +1,21 @@
+.create-training{
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    max-width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.create-training label{
+    padding: 10px 0
+}
+.create-training .form-control {
+    width: 100%;
+}
+.errorMsg{
+    color: #ff5d5d;
+    padding-top: 5px;
+}

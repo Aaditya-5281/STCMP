@@ -1,0 +1,21 @@
+.update-training{
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    max-width: 90%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 20px auto;
+}
+.update-training label{
+    padding: 10px 0
+}
+.update-training .form-control {
+    width: 100%;
+}
+.errorMsg{
+    color: #ff5d5d;
+    padding-top: 5px;
+}

@@ -1,0 +1,45 @@
+.attendancedet{
+    height: 100%;
+    width: 100%;
+    padding:30px;
+    color: white;
+}
+.attendancedet .navcon{
+    margin: auto;
+}
+.attendancedet .row{
+    width: 100%;
+    padding: 10px;
+}
+
+.attendancedet .navcon .btn {
+    text-align: center;
+    box-shadow: 0 0 2px #000000;
+    color: white;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+  }
+.attendancedet .navcon .btn:hover {
+    scale:1.02;
+    background-color: rgb(50, 205, 205);
+}
+.attendancedet .atd{
+    padding: 50px;
+}
+.atd .col{
+    margin: 10px;
+    border-radius: 10px;
+    display: block;
+}
+.atd .btn:hover{
+    background-color: rgb(0, 43, 215);
+    text-decoration: none;
+}
+.atd h1{
+    padding: 20px;
+}
+.attendancedet .cbp{
+    width: 200px;
+    height: 200px;
+}

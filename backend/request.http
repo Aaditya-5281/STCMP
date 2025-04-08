@@ -1,0 +1,75 @@
+POST  http://localhost:5000/faculty-api/register
+Content-Type: application/json
+
+{
+    "userId":"22071A0529",
+    "userName":"Abhi Sidhardha",
+    "password":"abhi1289"
+}
+###
+POST  http://localhost:5000/faculty-api/login
+Content-Type: application/json
+
+{
+    "userId":"22071A0529",
+    "userName":"Abhi Sidhardha",
+    "password":"abhi1289"
+}
+###
+POST http://localhost:5000/trainings-api/create
+Content-Type: application/json
+
+{
+    "_id": "6654bc412adb8ec4e046acc2",
+    "trainingName": "Training 4",
+    "startYear": 2020,
+    "endYear": 2021,
+    "studentYear": 3,
+    "semester": 2,
+    "totalStudents": 123,
+    "venue": "",
+    "mode": "offline",
+    "programCoordinator": ["22071A0561", "22071A0529"], 
+    "trainerName": "Rajesh T",
+    "designation": "",
+    "company": ""
+}
+
+
+###
+GET http://localhost:5000/trainings-api/trainings
+
+###
+GET http://localhost:5000/trainings-api/trainingsbyyear/2024
+###
+GET http://localhost:5000/trainings-api/gettrainings/6654ad50ffb33c72abb74070
+###
+POST http://localhost:5000/faculty-api/register
+Content-Type: application/json
+
+{   "userId" : "22071A0530",
+    "userName":"abhi",
+    "password":"a1"
+}
+###
+get http://localhost:5000/trainings-api/gettrainings/6654bc412adb8ec4e046acc2
+
+###
+PUT http://localhost:5000/trainings-api/updatetraining/6654bc412adb8ec4e046acc2
+Content-Type: application/json
+
+{
+    "_id": "6654bc412adb8ec4e046acc2",
+    "trainingName": "Training 4",
+    "startYear": 2020,
+    "endYear": 2021,
+    "studentYear": 3,
+    "semester": 2,
+    "totalStudents": 123,
+    "venue": "",
+    "mode": "offline",
+    "programCoordinator": "22071A0530",
+    "trainerName": "Rajesh T",
+    "designation": "",
+    "company": ""
+  }
