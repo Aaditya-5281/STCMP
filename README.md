@@ -28,6 +28,9 @@ A comprehensive web application for managing staff training programs and certifi
 - Cors for cross-origin resource sharing
 - Dotenv for environment variables
 
+### Project Diagram
+![STCMP Screenshot](./images/stcmp.png)
+
 ## Getting Started
 
 ### Prerequisites
